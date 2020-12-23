@@ -1,5 +1,6 @@
 <div class="side-bar-header">
   <div class="header-name">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'%>
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="create-room">
